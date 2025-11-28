@@ -12,15 +12,17 @@ services:
     startCommand: python -m src.main
     envVars:
       - key: STUDENT_EMAIL
-        value: 22f3000695@ds.study.iitm.ac.in
+        value: 24f2002446@ds.study.iitm.ac.in
       - key: STUDENT_SECRET
         sync: false
       - key: API_ENDPOINT_URL
         value: https://tds-llm-analysis.s-anand.net/submit
       - key: OPENAI_API_KEY
         sync: false
+      - key: OPENAI_BASE_URL
+        value: https://aipipe.org/openai/v1
       - key: OPENAI_MODEL
-        value: gpt-4
+        value: gpt-5
       - key: API_HOST
         value: 0.0.0.0
       - key: API_PORT
@@ -38,7 +40,7 @@ services:
       - key: MAX_RETRIES
         value: 2
       - key: MAX_FILE_SIZE_MB
-        value: 10
+        value: 1
       - key: MAX_PAYLOAD_SIZE_MB
         value: 1
       - key: SYSTEM_PROMPT
